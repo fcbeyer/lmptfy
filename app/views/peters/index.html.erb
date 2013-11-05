@@ -1,0 +1,28 @@
+<h1>Listing peters</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @peters.each do |peter| %>
+  <tr>
+    <td><%= peter.name %></td>
+    <td><%= peter.email %></td>
+    <td><%= link_to 'Show', peter %></td>
+    <td><%= link_to 'Edit', edit_peter_path(peter) %></td>
+    <td><%= link_to 'Destroy', peter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Peter', new_peter_path %>
+
+
+<%= image_tag("http://www.google.com/intl/en_com/images/srpr/logo3w.png")%>

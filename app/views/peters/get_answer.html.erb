@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="row">
+		<p align="center"><font size="5">let me <%= image_tag("p.gif")%><%= image_tag("e1.gif")%><%= image_tag("t.gif")%><%= image_tag("e2.gif")%><%= image_tag("r.gif")%> that for you</font></p>
+	</div>
+	<div class="row">
+		<div align="center">
+			<%= text_field_tag('from',nil,placeholder: 'from: email address', class: 'email_stuff')%>
+			<%= text_field_tag('subject',nil,placeholder: 'subject: Help!', class: 'email_stuff')%>
+		</div>
+	</div>
+	<div class="row">
+		<div align="center">
+			<%= text_area_tag('email_body',nil,rows: 10, cols: 25)%>
+		</div>
+	</div>
+	<div class="row">
+		<div align="center">
+			<button id="peter" class="btn btn" onclick="emailPeters('<%= email_recipients_url%>')">Peter</button>
+			<button id="peter" class="btn btn" onclick="emailRandomPeter('<%= email_recipients_url%>')">I'm feeling lucky</button>
+		</div>
+	</div>
+</div>
