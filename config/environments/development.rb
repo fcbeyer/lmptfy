@@ -34,7 +34,7 @@ Lmptfy::Application.configure do
 
   # Do not compress assets
   config.assets.compress = false
-
+  
   # Expands the lines which load the assets
   config.assets.debug = true
   ActionMailer::Base.delivery_method = :smtp
@@ -44,7 +44,7 @@ Lmptfy::Application.configure do
     :enable_starttls_auto => true,
     :address            => 'smtp.gmail.com',
     :port               => 587,
-    :tls                  => true,
+    :enable_starttls_auto => true,
     :domain             => 'gmail.com', #you can also use google.com
     :authentication     => :plain,
     :user_name          => 'letmptfy@gmail.com',

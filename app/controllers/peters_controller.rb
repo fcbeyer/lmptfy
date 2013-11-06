@@ -6,11 +6,13 @@ class PetersController < ApplicationController
   	notification_data = []
   	if params[:recipients].eql?('peters')
   		#email the peters
-  		PeterMailer.email_the_peters(params[:from],params[:subject],params[:body],to_list).deliver
+  		to_list = Peter.all_the_peters
+  		puts to_list.to_s
+  		#PeterMailer.email_the_peters(params[:from],params[:subject],params[:body]).deliver
   	else
   		#email a random peter
   		notification_data.push("rick.beyer@gmail.com")
-  		PeterMailer.email_random_peter.deliver
+  		PeterMailer.email_random_peter(params[:from],params[:subject],params[:body]).deliver
   	end
   	respond_to do |format|
   		format.json { render json: notification_data }

@@ -1,4 +1,7 @@
 <div class="container">
+	<!-- <div class="row">
+		<button id="notifications" class="btn btn" onclick="askPermission()" type="button">Enable Notifications</button>
+	</div> -->
 	<div class="row">
 		<p align="center"><font size="5">let me <%= image_tag("p.gif")%><%= image_tag("e1.gif")%><%= image_tag("t.gif")%><%= image_tag("e2.gif")%><%= image_tag("r.gif")%> that for you</font></p>
 	</div>
@@ -16,7 +19,7 @@
 	<div class="row">
 		<div align="center">
 			<button id="peter" class="btn btn" onclick="emailPeters('<%= email_recipients_url%>')">Peter</button>
-			<button id="peter" class="btn btn" onclick="emailRandomPeter('<%= email_recipients_url%>')">I'm feeling lucky</button>
+			<button id="random_peter" class="btn btn" onclick="emailRandomPeter('<%= email_recipients_url%>')">I'm feeling lucky</button>
 		</div>
 	</div>
 </div>
