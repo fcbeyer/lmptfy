@@ -11,6 +11,7 @@ class PetersController < ApplicationController
   		#PeterMailer.email_the_peters(params[:from],params[:subject],params[:body]).deliver
   	else
   		#email a random peter
+  		
   		notification_data.push("rick.beyer@gmail.com")
   		PeterMailer.email_random_peter(params[:from],params[:subject],params[:body]).deliver
   	end

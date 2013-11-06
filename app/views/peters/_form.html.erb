@@ -12,18 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name, style: 'align:center'  %>
     <%= f.text_field :name %>
   </div>
+  <br />
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email %>
     <%= f.text_field :email %>
   </div>
+  <br />
   <div class="field">
-    <%= f.label :active %><br />
+    <%= f.label :active %>
     <%= f.check_box :active %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Create Peter", class: "btn btn" %>
   </div>
 <% end %>

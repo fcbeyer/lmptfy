@@ -27,9 +27,7 @@ input[type="number"],
   height: 25px;
 }
 
-input,
-textarea,
-.uneditable-input {
+.lmptfy-textarea {
   width: 500px;
   height: 300px;
 }
@@ -42,4 +40,12 @@ textarea,
 .email_stuff{
 	width: 200px;
 	height: 25px;
+}
+
+label{
+  width: 4em;
+  float: left;
+  text-align: right;
+  margin-right: 0.5em;
+  display: block
 }

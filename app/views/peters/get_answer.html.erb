@@ -7,13 +7,13 @@
 	</div>
 	<div class="row">
 		<div align="center">
-			<%= text_field_tag('from',nil,placeholder: 'from: email address', class: 'email_stuff')%>
-			<%= text_field_tag('subject',nil,placeholder: 'subject: Help!', class: 'email_stuff')%>
+			<%= text_field_tag('from',nil,placeholder: 'from: email address', class: 'email_stuff lmptfy-textarea')%>
+			<%= text_field_tag('subject',nil,placeholder: 'subject: Help!', class: 'email_stuff lmptfy-textarea')%>
 		</div>
 	</div>
 	<div class="row">
 		<div align="center">
-			<%= text_area_tag('email_body',nil,rows: 10, cols: 25)%>
+			<%= text_area_tag('email_body',nil,rows: 10, cols: 25, class: 'lmptfy-textarea')%>
 		</div>
 	</div>
 	<div class="row">
