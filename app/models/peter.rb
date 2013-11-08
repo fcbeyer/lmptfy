@@ -5,7 +5,7 @@ class Peter < ActiveRecord::Base
     #get all the peters email addresses and return as a list for the "to" field on the email
     list = []
     Peter.select(:email).where(:active => true).all.each {|x| list.push(x.email)}
-    return list.join(",")
+    return list.join(" ")
   end
   
   def self.random_peter
