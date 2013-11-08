@@ -8,7 +8,7 @@ class PetersController < ApplicationController
   		#email the peters
   		to_list = Peter.all_the_peters
   		puts to_list.to_s
-  		#PeterMailer.email_the_peters(params[:from],params[:subject],params[:body]).deliver
+  		PeterMailer.email_the_peters(params[:from],params[:subject],params[:body],to_list).deliver
   	else
   		#email a random peter
   		random_peter = Peter.random_peter
