@@ -20,6 +20,3 @@
 ugly.txt
 
 Gemfile.lock
-
-#ignore configs so passwords are not leaked!
-/config/environments/*.rb
