@@ -11,9 +11,10 @@ class PetersController < ApplicationController
   		#PeterMailer.email_the_peters(params[:from],params[:subject],params[:body]).deliver
   	else
   		#email a random peter
-  		
+  		random_peter = Peter.random_peter
+  		puts random_peter
   		notification_data.push("rick.beyer@gmail.com")
-  		PeterMailer.email_random_peter(params[:from],params[:subject],params[:body]).deliver
+  		#PeterMailer.email_random_peter(params[:from],params[:subject],params[:body]).deliver
   	end
   	respond_to do |format|
   		format.json { render json: notification_data }
