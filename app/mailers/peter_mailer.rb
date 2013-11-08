@@ -3,6 +3,7 @@ class PeterMailer < ActionMailer::Base
   
   def email_the_peters(from_email,email_subject,body)
   	@body = body
+  	from_email = from_email + " letmptfy@gmail.com"
     mail(to: "rick.beyer@gmail.com", subject: email_subject, from: from_email)
   end
   
